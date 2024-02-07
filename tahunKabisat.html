@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //for kabisat
+     for(let tahun = 1600; tahun <= 2024; tahun++){
+     
+     if(tahun % 400 == 0)
+       console.log(`tahun ${tahun} adalah tahun kabisat`)
+     else if(tahun % 100 == 0 )
+       console.log(`tahun ${tahun} bukanlah tahun kabisat`)
+     else if(tahun % 4 == 0 )
+       console.log(`tahun ${tahun} adalah tahun kabisat`)
+     }
+       
+     //whilw kabisat
+     let tahun = 1600;
+     while(tahun <= 2024){
+     if(tahun % 400 == 0)
+       console.log(`tahun ${tahun} adalah tahun kabisat`)
+     else if(tahun % 100 == 0 )
+       console.log(`tahun ${tahun} bukanlah tahun kabisat`)
+     else if(tahun % 4 == 0 )
+       console.log(`tahun ${tahun} adalah tahun kabisat`)
+     tahun++
+     }
+
+    </script>
+</body>
+</html>
