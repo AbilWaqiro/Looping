@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function jamKeDetik(jam) {
+    var parts = jam.split(':');
+    var jamDetik = parseInt(parts[0]) * 3600; // Mengonversi jam ke detik
+    var menitDetik = parseInt(parts[1]) * 60; // Mengonversi menit ke detik
+    var detik = parseInt(parts[2]); // Detik
+
+    var totalDetik = jamDetik + menitDetik + detik;
+    return totalDetik;
+}
+
+// Contoh penggunaan
+    var jam = '10:30:25';
+    var detik = jamKeDetik(jam);
+    console.log(detik); // Output: 37825 (detik)
+
+    </script>
+</body>
+</html>

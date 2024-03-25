@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function jamKeMenit(jam) {
+    var parts = jam.split(':');
+    var jamMenit = parseInt(parts[0]) * 60; // Mengonversi jam ke menit
+    var menit = parseInt(parts[1]); // Menit
+
+    var totalMenit = jamMenit + menit;
+    return totalMenit;
+}
+
+// Contoh penggunaan
+    var jam = '10:30';
+    var totalMenit = jamKeMenit(jam);
+    console.log(totalMenit);
+    </script>
+</body>
+</html>
